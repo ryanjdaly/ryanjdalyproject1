@@ -1,0 +1,56 @@
+<html lang = "en">
+  <head>
+        <link href="p1.css" rel="stylesheet" type="text/css">
+    <title>P1</title>
+  </head>
+  <body>
+    <div id="tab_bar" role="navigation">
+      <button accesskey = "1" class = "buttons" id= "calculator_b">Calculator</button>
+    </div>
+    
+    <div id="content" role ="main">
+        <div id="content_calculator" role ="dialer">
+          <head align = "center">Calculator</head>
+          <p></p>
+          <body>
+            <form name = "Calculator">
+            <table align = "center">
+              <tr>
+                <td colspan = "4"><input type = "text" name = "result" id = "result"></td>
+              </tr>
+              <tr>
+                <td><input type = button class = "num_b" id= "1_b" value = "1" onclick="dis('1')"/></button></td>
+                <td><input type = button class = "num_b" id= "2_b" value = "2" onclick="dis('2')"/></button></td>
+                <td><input type = button class = "num_b" id= "3_b" value = "3" onclick="dis('3')"/></button></td>
+                <td><input type = button class = "op_b" id= "+_b" value = "+" onclick="dis('+')"/></button></td>
+                </tr>
+              <tr>
+                  <td><input type = button class = "num_b" id= "4_b" value = "4" onclick="dis('4')"/></button></td>
+                  <td><input type = button class = "num_b" id= "5_b" value = "5" onclick="dis('5')"/></button></td>
+                  <td><input type = button class = "num_b" id= "6_b" value = "6" onclick="dis('6')"/></button></td>
+                  <td><input type = button class = "op_b" id= "-_b" value = "-" onclick="dis('-')"/></button></td>
+                  </tr>
+              <tr>
+                  <td><input type = button class = "num_b" id= "7_b" value = "7" onclick="dis('7')"/></button></td>
+                  <td><input type = button class = "num_b" id= "8_b" value = "8" onclick="dis('8')"/></button></td>
+                  <td><input type = button class = "num_b" id= "9_b" value = "9" onclick="dis('9')"/></button></td>
+                  <td><input type = button class = "op_b" id= "x_b" value = "*" onclick="dis('*')"/></button></td>
+                  </tr>
+              <tr>
+                  <td><input type = button class = "num_b" id= "._b" value = "." onclick="dis('.')"/></button></td>
+                  <td><input type = button class = "num_b" id= "0_b" value = "0" onclick="dis('0')"/></button></td>
+                  <td><input type = button class = "op_b" id= "=_b" value = "=" onclick="calculate()"/></button></td>
+                  <td><input type = button class = "op_b" id= "/_b" value = "/" onclick="dis('/')"/></button></td>
+                  </tr> 
+              <tr>
+                <td colspan="2"><input type = button class = "op_b" id= "clear" value = "Clear" onclick="clr()" accesskey="c"></td>
+              </tr>   
+            </table>
+            </form>
+          </body>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="p1.js"></script>
+  </body>
+</html>
